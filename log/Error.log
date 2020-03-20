@@ -1,0 +1,8 @@
+1、 导入shiboken2失败
+    ImportError: DLL load failed while importing shiboken2: 找不到指定的程序。
+
+    ref：
+        https://stackoverflow.com/questions/56757044/pyside2-dll-load-failed-the-specified-procedure-could-not-be-found
+        https://github.com/pyinstaller/pyinstaller/issues/4044
+        https://wiki.qt.io/Qt_for_Python/Considerations
+             update your virtualenv package to the latest version (16.1.0+)

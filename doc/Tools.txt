@@ -1,0 +1,14 @@
+1. pip
+    python -m pip install --upgrade pip
+    pip install
+    pip show --files 安装包名
+    # pip list --outdated
+    # pip install --upgrade 要升级的包名
+    pip uninstall 要卸载的包名
+    pip --help
+    pip install -r requirements.txt
+
+2. redis
+    pip install redis
+
+3. virtualenv

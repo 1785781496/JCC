@@ -1,0 +1,10 @@
+0. virtualenv
+    pip install --upgrade virtualenv
+    pip install -r requirements.txt
+
+1. PySide2
+    pip install PySide2
+
+2. shiboken2
+    pip install shiboken2
+
