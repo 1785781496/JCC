@@ -1,4 +1,4 @@
-1、 导入shiboken2失败
+1、 【已解决】导入shiboken2失败，2020-03-20
     ImportError: DLL load failed while importing shiboken2: 找不到指定的程序。
 
     ref：
@@ -6,3 +6,9 @@
         https://github.com/pyinstaller/pyinstaller/issues/4044
         https://wiki.qt.io/Qt_for_Python/Considerations
              update your virtualenv package to the latest version (16.1.0+)
+
+    【解决方案】升级Python到3.8.2，问题解决
+
+2、 【已解决】安装pandas之后，使用报错。文件命名注意，用了pandas.py导致出错，修改为pandas_test.py
+    cannot import name 'Series' from partially initialized module 'pandas'
+

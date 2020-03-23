@@ -5,6 +5,30 @@
 1. PySide2
     pip install PySide2
 
-2. shiboken2
+2. shiboken2【不需要，python版本问题】
     pip install shiboken2
+
+3. requests
+    pip install requests
+
+4. pandas
+    pip install pandas
+    Installing collected packages: python-dateutil, pytz, numpy, pandas
+
+5. numpy
+    http://www.numpy.org/
+    https://github.com/numpy/numpy
+6. SciPy【安装失败】
+    https://www.scipy.org/
+    https://github.com/scipy/scipy
+    pip install SciPy
+
+    numpy.distutils.system_info.NotFoundError: No lapack/blas resources found.
+7. Matplotlib【安装失败】
+    https://matplotlib.org/
+    https://github.com/matplotlib/matplotlib
+    pip install Matplotlib
+
+    src/checkdep_freetype2.c(5): fatal error C1189: #error:  "FreeType version 2.3 or higher is required. You may set the MPLLOCALFREETYPE environment variable to 1 to let Matplotlib download it."
+    error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX86\\x64\\cl.exe' failed with exit status 2
 
