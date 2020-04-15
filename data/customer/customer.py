@@ -2,10 +2,17 @@
 
 from api.json_api import *
 
-class Customer():
-    def __init__(self):
-        self.name = ""
-        self.customer_code = ""
+
+class Customer:
+    def __init__(self, code="", name=u""):
+        self.code = code
+        self.name = name
+
+    def get_code(self):
+        return self.code
+
+    def get_name(self):
+        return self.name
 
 
 def get_json():

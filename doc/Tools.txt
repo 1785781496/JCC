@@ -10,5 +10,7 @@
 
 2. redis
     pip install redis
-
 3. virtualenv
+
+4. pip install graphviz sphinx
+

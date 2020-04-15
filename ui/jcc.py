@@ -50,6 +50,12 @@ class JCCTable(QWidget):
                     self.table_widget.setItem(i, code_index, item)
 
 
+class JCCDetail(QWidget):
+    def __init__(self, init_dict):
+        super(JCCDetail, self).__init__()
+        self.init_dict = init_dict
+
+
 class JCCMain(QWidget):
     def __init__(self):
         super(JCCMain, self).__init__()
@@ -65,6 +71,8 @@ class JCCMain(QWidget):
 
     def build_ui(self):
         tabwidget = QTabWidget()
+        index_detail = JCCDetail({})
+        tabwidget.addTab(index_detail, u'详情')
         if self.customer_dict:
             customer_table = JCCTable(self.customer_dict)
             tabwidget.addTab(customer_table, u'客户')
@@ -86,7 +94,6 @@ class JCCMain(QWidget):
         master_layout.addLayout(middle_layout)
         master_layout.addLayout(bottom_layout)
         self.setLayout(master_layout)
-
 
 
 if __name__ == '__main__':
