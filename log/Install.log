@@ -32,3 +32,7 @@
     src/checkdep_freetype2.c(5): fatal error C1189: #error:  "FreeType version 2.3 or higher is required. You may set the MPLLOCALFREETYPE environment variable to 1 to let Matplotlib download it."
     error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX86\\x64\\cl.exe' failed with exit status 2
 
+2020-05-07
+    pip install anytree
+        https://pypi.org/project/anytree/
+        Successfully installed anytree-2.8.0

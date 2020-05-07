@@ -15,9 +15,7 @@ def init_customer_info():
 
 
 def get_customer_list():
-    customer_list = [u'童话', u'灏日', u'良子', u'凝羽', u'声画']
-    print(customer_list)
-    return customer_list
+    return [u'童话', u'灏日', u'良子', u'凝羽', u'声画']
 
 
 def get_info_list():

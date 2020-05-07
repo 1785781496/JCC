@@ -2,6 +2,7 @@
 import sys
 
 from PySide2.QtWidgets import *
+from PySide2.QtCore import *
 from crm.crm_data import *
 
 
@@ -31,15 +32,20 @@ class CRMWindow(QWidget):
         mid_top_layout.addWidget(lable_issue_number)
         mid_top_layout.addWidget(lable_dev_number)
         mid_top_layout.addWidget(lable_update_number)
-        list_widget_info = QListWidget()
-        list_widget_info.addItems(get_info_list())
-        list_widget_info.currentItemChanged.connect(self.change_info)
+        self.list_widget_info = QListWidget()
+        self.list_widget_info.addItems(get_info_list())
+        self.list_widget_info.currentItemChanged.connect(self.change_info)
         mid_layout.addLayout(mid_top_layout, 40)
-        mid_layout.addWidget(list_widget_info, 60)
+        mid_layout.addWidget(self.list_widget_info, 60)
 
-        right_layout = QHBoxLayout()
+        right_layout = QVBoxLayout()
         self.lable_detail = QLabel()
+        self.table_widget = QTableWidget()
+        self.table_widget.setRowCount(10)
+        self.table_widget.setColumnCount(5)
+
         right_layout.addWidget(self.lable_detail)
+        right_layout.addWidget(self.table_widget)
 
         master_layout = QHBoxLayout()
         master_layout.addLayout(left_layout, 10)
@@ -50,6 +56,7 @@ class CRMWindow(QWidget):
 
     def change(self, event):
         self.lable_customer.setText(event.text())
+        # self.list_widget_info.setCurrentIndex(QModelIndex())
 
     def change_info(self, event):
         self.lable_detail.setText(event.text())
